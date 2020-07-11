@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Stop Watch</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+</head>
+<body>
+    <div class="container">
+        <div class="row"> 
+            <div class="col-2"></div>
+            <div class="col mt-5 mb-2"> <h1 class="heading">Stop Watch</h1></div>
+            <div class="col-2"></div>
+        </div>
+        <div class="row text-center ">
+            <div class="col">
+            <h1 id="min" class="num mx-1">0  </h1>
+            <h1 id="sec" class="num mx-1">0 </h1>
+            <h1 id = "milisec" class="num mx-1">0 </h1>
+            </div>
+     
+        <!-- <div class="col"> 
+        <h1 id="min" class="num" style="position: relative; left: 220px;">0 min</h1>
+        </div>
+        <div class="col">
+        <h1 id="sec" class="num">0 sec</h1>
+        </div>
+        <div class="col">
+        <h1 id = "milisec" class="num" style="position: relative; right: 220px;">0 msec</h1>
+        </div> -->
+        
+          
+         </div>
+        <div class="row text-center">
+           
+            <div class="col "> 
+            <button onclick="start()" id = "startbtn" class="btn mx-1 my-2 py-1 ">Start</button>
+         
+           
+            <button onclick="stop()" class="btn mx-1 my-2 py-1 ">Pause</button>
+        
+           
+             <button onclick="reset()" class="btn mx-1 my-2 py-1">Reset</button>
+             <button  class="btn mx-1 my-2 py-1" onclick="setLaps()">Lap</button>
+            </div>
+            
+            
+        </div>
+
+        <div id = "laps" class="laps">
+
+        </div>
+    </div>
+    <script src="app.js"></script>
+</body>
+</html>
